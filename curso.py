@@ -18,6 +18,7 @@ print(last_name.strip("- "))#*Este metodo sirve para eliminar todo lo que este d
 print(clasificador.capitalize())#*Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto en minúsculas
 print(clasificador.casefold())#*Retorna el texto de la cadena, normalizado a minúsculas. Los textos así normalizados pueden usarse para realizar búsquedas textuales independientes de mayúsculas y minúsculas y es mas agresivo que el lower.
 print(lista.count(4)) #*Este metodo me permite contar la cantidad de veces que se repite algo dentro de una lista, cadena de texto, etc...
+print("Seprador", "por", "comas", "con", "el", "condicional", "sep", sep=",")
 
 
 
