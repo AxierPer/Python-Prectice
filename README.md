@@ -36,7 +36,7 @@
 Created with ❤️  by **Axier Perlaza (AxierPer)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-AxierPer-181717?style=flat&logo=github&logoColor=white)](https://github.com/AxierPer)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Axier%20Perlaza-blue?style=flat&logo=linkedin)](www.linkedin.com/in/axier-perlaza-044866274)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Axier%20Perlaza-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/axier-perlaza-044866274/)
 
 ---
 
