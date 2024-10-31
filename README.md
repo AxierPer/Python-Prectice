@@ -4,7 +4,7 @@
 
 ## 📚 Resources
 - Here are all the exercises that I have done so far with the python course at Platzi.
-### ℹ️ Basic
+### 🔎 Basic
 - In this folder are all the basic Python basics seen in the course.
 ### 🛠️ Functions
 - In this folder we observe the section of the functions, where are the types of functions and their structural composition.
