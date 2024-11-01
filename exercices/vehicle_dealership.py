@@ -33,7 +33,7 @@ class Client:
         else:
             print(f"The vehicle {vehicle.model} is not available")
 
-class Vehicle_leadership:
+class Vehicle_deladership:
     def __init__(self, ):
         self.vehicles = []
         self.clients = []
@@ -60,21 +60,18 @@ vehicle_3 = Vehicle('Chevrolet',2010,7500)
 # Define user
 client_special = Client("Axier", "001")
 
-# Define Vehicle leadership
-vehicle_leadership = Vehicle_leadership()
-vehicle_leadership.add_cars(vehicle_1)
-vehicle_leadership.add_cars(vehicle_2)
-vehicle_leadership.add_cars(vehicle_3)
-vehicle_leadership.register_user(client_special)
+# Define Vehicle deladership
+vehicle_deladership = Vehicle_deladership()
+vehicle_deladership.add_cars(vehicle_1)
+vehicle_deladership.add_cars(vehicle_2)
+vehicle_deladership.add_cars(vehicle_3)
+vehicle_deladership.register_user(client_special)
 
 # Show vehicles
-vehicle_leadership.show_vehicles()
+vehicle_deladership.show_vehicles()
 
 # Client buy a vehicle
 client_special.buy_vehicle(vehicle_3)
 
 # Show vehicles
-vehicle_leadership.show_vehicles()
-
-
-
+vehicle_deladership.show_vehicles()
