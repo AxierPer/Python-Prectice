@@ -9,7 +9,7 @@ class Vehicle:
         if self.is_available:
             self.is_available = False
             print(f"The vehicle {self.brand}. Has been sold.")
-        else:
+
             print(f"The vehicle {self.brand} is not available.")
 
     def check_availability(self):
@@ -70,4 +70,55 @@ class Customer:
         self.name = name
         self.purchased_vehicles = []
 
-    # def buy_vehicle()
+    def buy_vehicle(self,vehicle: Vehicle):
+        if vehicle.check_availability():
+            vehicle.sell()
+            self.purchased_vehicles.append(vehicle)
+        else:
+            print(f"Sorry, {vehicle.brand} is not available")
+
+    def inquire_vehicle (self, vehicle: Vehicle):
+        if vehicle.check_availability():
+            availablility = "available"
+        else:
+            availablility = "not available"
+        print(f"{vehicle.brand} is {availablility} and price is {vehicle.price}")
+
+class Dealership:
+    def __init__(self):
+        self.inventory = []
+        self.customers = []
+
+    def add_cars (self, vehicle: Vehicle):
+        self.inventory.append(vehicle)
+        print(f"{vehicle.brand} is add to inventory")
+
+    def register_customer(self, customer: Customer):
+        self.customers.append(customer)
+        print(f"The customer {customer.name} is add")
+
+    def show_available_vehicles(self):
+        print("The available: ")
+        for vehicle in self.inventory:
+            if vehicle.check_availability():
+                print(f"Brand: {vehicle.brand}\nPrice: {vehicle.price}\n")
+
+car1 = Car("Toyota", "Corola", 20000)
+bike1 = Bike("Yamaha", "MT-09", 15000)
+truck1 = Truck("Volvo", "FH16", 80000)
+
+customer1 = Customer("Axier")
+
+dealership = Dealership()
+
+dealership.add_cars(car1)
+dealership.add_cars(bike1)
+dealership.add_cars(truck1)
+
+dealership.show_available_vehicles()
+
+customer1.inquire_vehicle(bike1)
+
+customer1.buy_vehicle(bike1)
+
+dealership.show_available_vehicles()
