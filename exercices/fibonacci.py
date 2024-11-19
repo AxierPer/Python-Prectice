@@ -1,3 +1,6 @@
+from functools import lru_cache
+
+@lru_cache(maxsize=16)
 def fibonacci(n):
     if n == 0:
         return 0
@@ -9,6 +12,6 @@ def fibonacci(n):
 
 number = 0
 
-while number <= 10:
+while number <= 30:
     print(fibonacci(number))
     number = number + 1
